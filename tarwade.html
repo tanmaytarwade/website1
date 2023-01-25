@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css and html</title>
+    <link rel="stylesheet" href="tanmay.css">
+    <style>
+        /*element slector*/
+        p {
+            border: 2px solid olive;
+        }
+
+        /*this is id selector*/
+        #firsttime {
+            color: blue;
+        }
+
+        /*this is class selector*/
+        .secondtime {
+            color: yellow;
+        }
+
+        /*this is grouping selector*/
+        span,
+        footer {
+            color: chocolate;
+            background-color: magenta;
+        }
+    </style>
+    <style>
+        p {
+            font-style: oblique;
+            font-size: 20px;
+            /* 1/96th inch */
+            line-height: 1.3em;
+            /* display: inline;*/
+            /* position: absolute;*/
+            /*position: relative;*/
+            /* position: fixed;*/
+            /*position: sticky; use for to sticky any element
+         top: 3px;*/
+
+
+        }
+
+        span {
+            font-weight: lighter
+        }
+    </style>
+    <style>
+        #thirdtime {
+            color: rgb(0, 0, 0);
+        }
+
+        #fourthtime {
+            color: rgb(0, 200, 12);
+
+        }
+    </style>
+    <style>
+        #fivetime {
+            background-color: rgb(31, 122, 212);
+            height: 100px;
+            width: 455px;
+            border: 3px;
+            border-style: solid;
+            border-color: crimson;
+
+        }
+    </style>
+    <style>
+        #paragraph {
+            background-color: #2a2226;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 3px;
+            border-bottom-left-radius: 5px;
+
+            border-left-color: black;
+            border-right-color: darkslategrey;
+            background-color: #e6cfcf;
+            padding-top: 2px;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin-top: 30px;
+            margin-bottom: 2px;
+            border-radius: 20px;
+            width: 530px;
+        }
+    </style>
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        container {
+            width: 20px;
+            color: orange;
+            border-width: 200px;
+            margin: 300px auto;
+            width: 50px;
+            margin: 20px;
+            padding: 600px;
+
+        }
+
+        .item {
+            border: 2px;
+            border-color: black;
+            margin: 20px;
+            padding: 500px, 500px;
+            background-color: whitesmoke;
+            width: 300px;
+            border-radius: 20px;
+
+            a:hover {
+                color: black;
+                background-color: whitesmoke;
+                border: 2px solid black;
+            }
+
+            a:visited {
+                color: chartreuse;
+
+            }
+
+            .btn {
+                background-color: rgb(133, 178, 216);
+                padding: 6px;
+                border: none;
+                cursor: pointer;
+                font-size: 13px;
+                border-radius: 4px;
+            }
+    </style>
+    <style>
+        .navbar {
+            background-color: gray;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 2px;
+            text-decoration: none;
+            color: red
+        }
+    </style>
+    <style>
+        header {
+            margin: auto;
+            border: 2px solid red;
+
+        }
+
+        img {
+            width: 400px;
+
+        }
+
+        h3 {
+            color: rgb(31, 30, 30);
+        }
+    </style>
+    <style>
+        .flexbox {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* Initialize the container as a flex box */
+            /* Flex properties for a flex container */
+
+            /*  flex-direction: row; (Default value of flex-direction is row) */
+            /* flex-direction: column;*/
+            /*flex-direction: row-reverse;*/
+            /*  flex-direction: column-reverse; */
+            /*  flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+            /*   flex-wrap: wrap-reverse; */
+
+            /*This is a shorthand for flex-direction: and flex-wrap: ;*/
+            /*   flex-flow: row-reverse wrap; */
+            /* justify-content will justify the content in horizontal direction */
+            /*  justify-content: center; */
+            /* justify-content: space-between; */
+            /*  justify-content: space-evenly; */
+            /*  justify-content: space-around; */
+
+            /* justify-content will justify the content in vertical direction */
+            /* align-items: center; */
+            /*  align-items: flex-end; */
+            /*  align-items: flex-start; */
+            /*  align-items: stretch; */
+        }
+
+        /* .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;*/
+        }
+
+        #item-1 {
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+            /* flex-grow: 2;*/
+            /*flex-shrink: 2; */
+        }
+
+        #item-2 {
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            /* flex-basis: 160px;*/
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+
+        #item-3 {
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start;*/
+            /* align-self: flex-end;*/
+            /*  align-self: center;*/
+    </style>
+    <style>
+       box:{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+            
+
+        }
+
+        @media only screen and (max-width:300px) {
+            #box-1 {
+                display: block;
+                background-color: cyan;
+              
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3 {
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px) {
+            #box-4 {
+                display: block;
+                background-color: green;
+            }
+        } 
+    </style> 
+
+</head>
+
+<body>
+    <h1>this is css class</h1>
+    <!-- css can be written by three ways inline,internal,external -->
+    <!-- inline -->
+    <!--   <p style= "color: red; background-color: gray"; >this is css </p> -->
+    <!-- <p>this is css</p> -->
+    <!-- this orange color is indicate the internal css method -->
+    <!-- this hotpink color show external css method -->
+    <!--   <p id= "firsttime">tanmay vaibhav tarwade vaibhav bhaginath tarwade  dipali tarwade </p> 
+        <p class="secondtime"> tanmay vaibhav tarwade vaibhav tarwade dipali tarwade vedanti tarwade </p>
+        <span>this is span </span>
+        <footer>this is footer </footer>
+        <p id="thirdtime"> tanmay use html and css</p>
+        <p id="fourthtime">vaibhav use java</p>
+        <p id="fivetime"> dipali need to use css</p>-->
+    <p id=paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio dolores placeat ab?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio dolores placeat ab?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio dolores placeat ab?
+    </p>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspare" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                amet consectetur adipisicing elit. Quam perferendis quia hic
+                amet consectetur adipisicing elit. Quam perferendis quia hic
+            </p>
+        </div>
+        <div>
+            <div id="computer" class="item">
+                <h4>computer</h4>
+                <p id="computerpare" class="para">amet consectetur adipisicing elit.
+                    amet consectetur adipisicing elit. Quam perferendis quia hic
+                    amet consectetur adipisicing elit. Quam perferendis quia hic
+                </p>
+            </div>
+            <div>
+                <div id="stationary" class="item">
+                    <h5>stationary</h5>
+                    <p id=stationary class="para">amet consectetur adipisicing elit
+                        amet consectetur adipisicing elit. Quam perferendis quia hic
+                        amet consectetur adipisicing elit. Quam perferendis quia hic
+                    </p>
+                    <a href="https://google.com" class="btn">read more</a>
+                    <button class=btn>contact us</button>
+                </div>
+                <hr>
+                <h1>navigation</h1>
+                <header1>
+                    <nav class=navbar>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </nav>
+                </header1>
+                <hr>
+                <header class="top">
+                    <h3><strong> welcome to tanmay Blog</strong></h3>
+                    <img src="https://media.istockphoto.com/photos/ramkund-in-nashik-india-with-dramatic-colorful-clouds-in-the-sky-picture-id880969326?k=20&m=880969326&s=612x612&w=0&h=lC-Zh6jVFg6ML0X1J5JnmLjC_CHsYKMwmYI41R8YTwM="
+                        alt="">
+                </header>
+                <hr>
+                 <div class="flexbox">
+                    <div class="item" id="item-1">First Box</div>
+                    <div class="item" id="item-2">Second Box</div>
+                    <div class="item" id="item-3">Third Box</div>
+                </div>
+
+                <div class="box" id="box-1">Mai ek iPhone hoon</div>
+                <div class="box" id="box-2">Mai ek Tablet hoon</div>
+                <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+                <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
